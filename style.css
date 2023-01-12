@@ -11,20 +11,11 @@
     height: 100vh;
     width: 100vw;
     background-image: url('https://cdn.pixabay.com/photo/2017/10/27/15/12/geeks-2894621_960_720.jpg');
-    background-size:     cover;
-    background-repeat:   no-repeat;
-    background-position: center center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-color: #1e1e1e;
 }
-
-/* .dark_mode{
-    width: 100vw;
-    height: 100vh;
-    background-color: #1e1e1e;
-    z-index: 1;
-
-} */
-
 
 .sub_container {
     display: flex;
@@ -34,7 +25,7 @@
     padding: 0 0.5rem;
 }
 
-.heading p{
+.heading p {
     color: white;
     font-size: 2rem;
     text-align: center;
@@ -42,7 +33,7 @@
 
 
 .form_container {
-    background:#3b3b3bd7;
+    background: #3b3b3bd7;
     padding: 3rem;
     color: white;
     display: flex;
@@ -90,7 +81,7 @@ form {
     transition: all 0.2s ease;
 }
 
-.signup{
+.signup {
     background: brown;
     color: white;
 }
@@ -100,41 +91,61 @@ form {
     opacity: 1;
 }
 
-.theme_toggle{
+.theme_toggle {
     background-color: brown;
-    color:#fff;
+    color: #fff;
 }
 
-.terms_services{
+.terms_services {
     text-align: center;
 }
 
-.terms_services a{
-    color:#eee;
+.terms_services a {
+    color: #eee;
 }
 
 /* Captcha */
 
-.captcha_group{
+
+.captcha_container {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.captcha_input {
+    width: 50%;
+}
+
+.captcha_input input {
+    width: 100%;
+}
+
+
+.captcha_group {
+    width: 50%;
+}
+
+.captcha_group div {
+    width: 100%;
     display: flex;
 }
 
-.captchbg{
-    height: 60px;
-    width: 80%;
-    position: relative;
-}
-
-#captcha{
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+#captcha {
+    width: 70%;
+    padding: 0.5rem 1rem;
+    background-image: url("https://www.optacom.com/components/com_breezingforms/images/captcha/backgrounds/bg6.png");
+    background-color: #e62d2d9a;
     letter-spacing: 5px;
-    z-index: 1;
-    font-size: 2rem;
-    text-shadow: 0 0 5px #474747;
+    text-shadow: 0 0 10px #000000;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#captcha_reload {
+    width: 30%;
+    background-color: #5f5353;
+    color: #fff;
+
 }
 
 @media only screen and (max-width:800px) {

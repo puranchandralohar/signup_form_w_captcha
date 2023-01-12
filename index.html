@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="main_container">
-    <div class="sub_container">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b59b4a47db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="sub_container">
         <div class="heading">
           <p>New Here</p>
           <button class="btn">Get Started</button>
@@ -20,31 +24,46 @@
           <form class="form">
             <div class="input_group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" />
             </div>
             <div class="input_group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="emal">
+              <input type="email" id="email" name="emal" />
             </div>
             <div class="input_group">
               <label for="password">Password</label>
-              <input type="Password" id="Password" name="Password">
+              <input type="Password" id="Password" name="Password" />
             </div>
             <div class="input_group">
-              <label for="captcha">Enter Captcha</label>
-              <div class="captcha_group">
-                <img src="https://www.optacom.com/components/com_breezingforms/images/captcha/backgrounds/bg6.png" alt="captchbg" class="captchbg">
-                <p id="captcha">4aW8Oh</p>
-                <button class="btn" id="captcha_reload">Reload</button>
+              <div class="captcha_container">
+                <div class="captcha_input">
+                  <label for="captcha_input_title">Enter Captcha</label>
+                  <input
+                    type="text"
+                    id="captcha_element"
+                    name="captcha_element"
+                  />
+                </div>
+                <div class="captcha_group">
+                  <label for="captcha_code">Captcha Code</label>
+                  <div>
+                    <span id="captcha">4aW8Oh</span>
+                    <button class="btn" id="captcha_reload">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-             
             </div>
             <button class="signup btn">Sign Up</button>
-            <p class="terms_services">By sigining up the form, you agree to our <a href="#">Terms of Services.</a> </p>
+            <p class="terms_services">
+              By sigining up the form, you agree to our
+              <a href="#">Terms of Services.</a>
+            </p>
           </form>
         </div>
-    </div>     
-  </div>
-  <script src="script.js"></script>
-</body>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
