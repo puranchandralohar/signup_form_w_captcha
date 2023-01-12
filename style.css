@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/27/15/12/geeks-2894621_960_720.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;   
+    background-color: #1e1e1e;
+}
+
+/* .dark_mode{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    z-index: 1;
+
+} */
+
+
+.sub_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 0 0.5rem;
+}
+
+.heading p{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.form_container {
+    background:#3b3b3bd7;
+    padding: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8px;
+}
+
+.input_group label {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.input_group input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.input_group input:focus {
+    box-shadow: 0 0 0 1px #e62d2d;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.signup{
+    background: brown;
+    color: white;
+}
+
+.btn:focus,
+.btn:hover {
+    opacity: 1;
+}
+
+.theme_toggle{
+    background-color: brown;
+    color:#fff;
+}
+
+.terms_services{
+    text-align: center;
+}
+
+.terms_services a{
+    color:#eee;
+}
+
+/* Captcha */
+
+.captcha_group{
+    display: flex;
+}
+
+.captchbg{
+    height: 60px;
+    width: 80%;
+    position: relative;
+}
+
+#captcha{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    letter-spacing: 5px;
+    z-index: 1;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #474747;
+}
+
+@media only screen and (max-width:800px) {
+    .sub_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+    }
+}
